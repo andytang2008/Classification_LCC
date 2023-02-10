@@ -1,0 +1,254 @@
+rule "Primo VE Marc - Lsr02"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "A.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - General Works")
+create pnx."search"."lsr02" with TEMP"1"
+end
+
+#############################################
+rule "Primo VE Marc - Lsr02_B"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "B.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Philosophy. Psychology. Religion")
+create pnx."search"."lsr02" with TEMP"1"
+end
+############################################
+rule "Primo VE Marc - Lsr02_C"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "C.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Auxiliary Sciences Of History")
+create pnx."search"."lsr02" with TEMP"1"
+end
+#################################################
+
+rule "Primo VE Marc - Lsr02_D"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "D.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - World History")
+create pnx."search"."lsr02" with TEMP"1"
+end
+##################################################
+rule "Primo VE Marc - Lsr02_E"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "E.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - History of the Americas(General)")
+create pnx."search"."lsr02" with TEMP"1"
+end
+##################################################
+rule "Primo VE Marc - Lsr02_F"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "F.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - History of the Americas(Local)")
+create pnx."search"."lsr02" with TEMP"1"
+end
+##################################################
+rule "Primo VE Marc - Lsr02_G"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "G.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Geography. Anthropology. Recreation")
+create pnx."search"."lsr02" with TEMP"1"
+end
+##################################################
+rule "Primo VE Marc - Lsr02_H"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "H.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Social Science")
+create pnx."search"."lsr02" with TEMP"1"
+end
+##################################################
+rule "Primo VE Marc - Lsr02_J"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "J.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Political Science")
+create pnx."search"."lsr02" with TEMP"1"
+end
+##################################################
+rule "Primo VE Marc - Lsr02_K"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "K.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Law")
+create pnx."search"."lsr02" with TEMP"1"
+end
+####################################################
+rule "Primo VE Marc - Lsr02_L"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "L.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Education")
+create pnx."search"."lsr02" with TEMP"1"
+end
+####################################################
+rule "Primo VE Marc - Lsr02_M"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "M.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Music and Books on Music")
+create pnx."search"."lsr02" with TEMP"1"
+end
+####################################################
+rule "Primo VE Marc - Lsr02_N"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "N.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Fine Arts")
+create pnx."search"."lsr02" with TEMP"1"
+end
+####################################################
+rule "Primo VE Marc - Lsr02_P"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "P.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Language and Literature")
+create pnx."search"."lsr02" with TEMP"1"
+end
+####################################################
+rule "Primo VE Marc - Lsr02_Q"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "Q.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Science")
+create pnx."search"."lsr02" with TEMP"1"
+end
+####################################################
+rule "Primo VE Marc - Lsr02_R"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "R.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Medicine")
+create pnx."search"."lsr02" with TEMP"1"
+end
+####################################################
+rule "Primo VE Marc - Lsr02_S"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "S.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Agriculture")
+create pnx."search"."lsr02" with TEMP"1"
+end
+####################################################
+rule "Primo VE Marc - Lsr02_T"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "T.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Technology")
+create pnx."search"."lsr02" with TEMP"1"
+end
+####################################################
+rule "Primo VE Marc - Lsr02_U"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "U.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Military Science")
+create pnx."search"."lsr02" with TEMP"1"
+end
+####################################################
+rule "Primo VE Marc - Lsr02_V"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "V.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Naval Science")
+create pnx."search"."lsr02" with TEMP"1"
+end
+####################################################
+rule "Primo VE Marc - Lsr02_Z"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "Z.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Bibliography. Library science. Information resources ")
+create pnx."search"."lsr02" with TEMP"1"
+end
+####################################################
