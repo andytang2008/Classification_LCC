@@ -1,6 +1,6 @@
 # Classification_LCC
 In old Primo, we had the “Classification LCC” facet which looks like below.
-
+ ![1](https://user-images.githubusercontent.com/20071142/218160583-2165610e-da89-4d5b-a142-b308d55a802a.png)
 However, during the migration process from the Primo to Primo VE, we found there was no choices to select and activate Classification LCC. The Primo VE merely provided the “Classification NDC” facet which is a Nippon classification number system.
 
 Intending to make this Classification LCC available in the facet, a local field named “local_field_02” was created by clicking Discovery->Manage display and local fields->Add field->Add local field. The “Enable field for search” and “Enable field for facet” boxes were checked.
