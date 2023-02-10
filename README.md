@@ -4,7 +4,7 @@ In old Primo, we had the “Classification LCC” facet which looks like below.
  
 However, during the migration process from the Primo to Primo VE, we found there was no choices to select and activate Classification LCC. The Primo VE merely provided the “Classification NDC” facet which is a Nippon classification number system.
 
-Intending to make this Classification LCC available in the facet, a local field named “local_field_02” was created by clicking Discovery->Manage display and local fields->Add field->Add local field. The “Enable field for search” and “Enable field for facet” boxes were checked.
+Intending to make this Classification LCC available in the facet, a local field named “local_field_02” was created by clicking Discovery->Manage display and local fields->Add field->Add local field. The “Enable field for search” and “Enable field for facet” boxes were checked. Just a reminder, before this step, you had to tell Primo VE which local field you would like use to apply the Search and Facet Normalization rules. You could do it by clicking Discovery->other->"Local Fields using Search and Facet Normalization Rules", then selecting the local field to use.
 ![2](https://user-images.githubusercontent.com/20071142/218160638-57a60254-f2b5-4577-83f8-8c9e5d9b50e8.png)
 
 The “MARC21 normalization rule for search and facet” was edited. The customized normalization rule is very long and I put it in github. The part of demo is like as follows.
